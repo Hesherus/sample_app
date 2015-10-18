@@ -3,17 +3,21 @@ ruby '2.2.1'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails'
-
+gem 'bootstrap-sass'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
 end
-
+gem 'libnotify'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
